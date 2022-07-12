@@ -1,11 +1,11 @@
 /* 
-1 - Resets e variáveis globais
-2 - 
-
+1 - Resets and global variables
+2 - Header
+3 - Home
 
 */
 
-/* Resets e variáveis globais */
+/** Resets and global variables **/
 :root {
     --main-color: #344A51;
     --title-color: #172A30;
@@ -56,4 +56,18 @@ p {
     font-size: 18px;
 }
 
-/** Resets e variáveis globais  **/
+/** Resets and global variables  **/
+
+/** Header **/
+/** Header **/
+
+/** Home **/
+#home {
+    height: 100vh;
+    background-image: url('../images/home-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/** Home **/
