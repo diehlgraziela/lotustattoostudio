@@ -1,0 +1,18 @@
+@media(max-width:768px) {
+    #home {
+        text-align: center;
+    }
+
+    #header nav {
+        visibility: hidden;
+    }
+
+    #about .about-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about .half-bg {
+        display: none;
+    }
+}
