@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotus Tattoo Studio</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <header id="header">
+    <section id="home">
+        <div class="logo"><img src="images/logo2.png" alt=""></div>
+
+        <div class="container">
+            <h1>Lotus Tattoo Studio</h1>
+            <a href="#contact" class="button">Agende seu Horário</a>
+        </div>
+
+        <a href="#header"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <section id="header">
         <nav>
             <ul class="nav-links">
                 <li class="nav-link"><a href="#home">Início</a></li>
-                <li class="nav-link"><a href="about">Sobre Nós</a></li>
-                <li class="nav-link"><a href="artists">Artistas</a></li>
+                <li class="nav-link"><a href="#about">Sobre Nós</a></li>
+                <li class="nav-link"><a href="#artists">Artistas</a></li>
             </ul>
 
             <div class="logo"><a href="#home"><img src="images/logo2.png" alt="Logo"></a></div>
@@ -28,16 +40,30 @@
                 <li class="nav-link"><a href="#contact">Contatos</a></li>
             </ul>
         </nav>
-    </header>
-
-    <section id="home">
-        <div class="container">
-            <h1>Lotus Tattoo Studio</h1>
-            <a href="#contact" class="button">Agende seu Horário</a>
-        </div>
     </section>
 
-    <section id="about"></section>
+    <section id="about">
+        <div class="about-content">
+            <div class="container">
+                <h1>Sobre Nós</h1>
+                <p>Se você deseja fazer uma tatuagem que seja completamente única e específica para você, então você
+                    precisa
+                    visitar o Lotus Tattoo Studio. Nós oferecemos designs personalizados projetados para você
+                    e para suas necessidades. Levamos em consideração suas preferências e o design que você escolher
+                    será
+                    uma
+                    representação de você e de sua individualidade.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem alias minus quibusdam officia
+                    obcaecati, facere cupiditate molestiae ea molestias dignissimos non nulla iste repellendus assumenda
+                    nesciunt quae voluptas mollitia quia.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque mollitia, rem minima odio dolorum
+                    repudiandae praesentium eligendi quibusdam iusto nostrum optio amet sequi animi debitis repellat
+                    nulla harum enim unde?</p>
+            </div>
+        </div>
+        <div class="half-bg"><img src="images/about-img.png" alt=""></div>
+    </section>
+
     <section id="artists"></section>
     <section id="gallery"></section>
     <section id="playlists"></section>
