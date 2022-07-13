@@ -47,7 +47,8 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 h2 {
@@ -77,7 +78,15 @@ ul li {
 }
 
 .container {
-    padding: 0 4rem;
+    padding: 0 6.5rem;
+}
+
+.button {
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.45);
+    background: var(--main-color);
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
 }
 
 /** Resets and global variables  **/
@@ -99,7 +108,7 @@ ul li {
 
 #header nav .nav-links {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 #header .logo img {
@@ -115,11 +124,23 @@ ul li {
 
 /** Home **/
 #home {
-    height: 100%;
+    height: 100vh;
     background-image: url('../images/home-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .button {
+    margin-top: 2.5rem;
+}
+
+#home h1 {
+    color: var(--white);
 }
 
 /** Home **/
