@@ -3,10 +3,6 @@
         text-align: center;
     }
 
-    #header nav {
-        display: none;
-    }
-
     #about .about-content {
         width: 100%;
         text-align: center;
@@ -15,4 +11,29 @@
     #about .half-bg {
         display: none;
     }
+
+    #artists .artists-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #artists h1 {
+        text-align: center;
+    }
+
+    #artists h2 {
+        font-size: 24px;
+    }
 }
+
+
+/* Desktops and large screens */
+@media (min-width: 769px) and (max-width:1024px) {
+    #artists .artists-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra large screens and TV */
+@media (min-width: 1201px) {}
