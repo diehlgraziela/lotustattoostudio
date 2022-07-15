@@ -61,6 +61,7 @@ h3 {
 
 p {
     font-size: 18px;
+    color: var(--main-color);
 }
 
 a {
@@ -96,6 +97,24 @@ ul li {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+}
+
+.stripe {
+    margin: 2rem 0;
+    height: 100px;
+    background: url(../images/stripe.png) repeat 0 0;
+    animation: stripe 40s linear infinite;
+    filter: opacity(0.2);
+}
+
+@keyframes stripe {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -2560px 0;
+    }
 }
 
 /** Resets and global variables  **/
@@ -182,3 +201,13 @@ ul li {
 }
 
 /** About **/
+
+/** Artists **/
+#artists .artists-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+/** Artists **/
