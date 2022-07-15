@@ -321,7 +321,7 @@ ul li {
     position: absolute;
     bottom: 3.3rem;
     left: 2rem;
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: var(--transition);
 }
 
