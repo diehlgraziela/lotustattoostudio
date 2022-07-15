@@ -36,6 +36,8 @@ body {
     background-color: var(--bg-color);
 }
 
+
+
 h1,
 h2,
 h3,
@@ -44,11 +46,11 @@ h5,
 h6 {
     font-family: Arrancar;
     color: var(--title-color);
+    font-weight: 400;
 }
 
 h1 {
     font-size: 4rem;
-    font-weight: 400;
 }
 
 h2 {
@@ -203,11 +205,32 @@ ul li {
 /** About **/
 
 /** Artists **/
+#artists h2,
+#artists p {
+    color: var(--white);
+}
+
 #artists .artists-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    background: linear-gradient(0deg, rgba(52, 74, 81, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
 
+#artists .artists-cards .artist-card {
+    position: relative;
+}
+
+#artists .artists-cards .artist-card img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#artists .artists-cards .artist-card .artist-description {
+    color: var(--white);
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
 }
 
 /** Artists **/
