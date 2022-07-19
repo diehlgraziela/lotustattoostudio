@@ -36,8 +36,6 @@ body {
     background-color: var(--bg-color);
 }
 
-
-
 h1,
 h2,
 h3,
@@ -341,6 +339,7 @@ ul li {
 /** Artists **/
 
 /** Gallery **/
+
 #gallery h1 {
     text-align: center;
 }
@@ -368,7 +367,6 @@ ul li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 300px);
-    gap: 1rem;
 }
 
 #gallery .gallery-image {
@@ -518,3 +516,24 @@ ul li {
 }
 
 /** Playlists **/
+
+/** Contact **/
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+#contact .half-bg {
+    width: 50%;
+}
+
+#contact .half-bg img {
+    width: 100%;
+    height: 100vh;
+}
+
+#contact .contact-form {
+    width: 50%;
+}
+
+/** Contact **/
