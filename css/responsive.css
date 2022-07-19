@@ -24,6 +24,36 @@
     #artists h2 {
         font-size: 24px;
     }
+
+    #gallery .gallery-images {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    #gallery .gallery-images .gallery-image:nth-child(1) {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    #gallery .gallery-images .gallery-image:nth-child(2) {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    #gallery .gallery-images .gallery-image:nth-child(3) {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    #gallery .gallery-images .gallery-image:nth-child(4) {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    #gallery .gallery-images .gallery-image {
+        width: calc(100% - 10px);
+    }
 }
 
 

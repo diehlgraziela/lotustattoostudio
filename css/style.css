@@ -51,7 +51,6 @@ h6 {
 
 h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
 }
 
 h2 {
@@ -342,38 +341,109 @@ ul li {
 /** Artists **/
 
 /** Gallery **/
+#gallery h1 {
+    text-align: center;
+}
+
 #gallery .filter-options {
     display: flex;
+    justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 #gallery .filter-options li {
-    cursor: pointer;
-    border: 2px solid var(--main-color);
     color: var(--title-color);
+    cursor: pointer;
+    padding: 0.5rem;
 }
 
 #gallery .filter-options li.active {
-    background: var(--main-color);
+    text-decoration: underline;
+    color: var(--main-color);
 }
 
 #gallery .gallery-images {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 1rem;
+}
+
+#gallery .gallery-image {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#gallery .gallery-image .text {
+    font-family: Arrancar;
+    font-size: 2rem;
+    color: var(--white);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .gallery-image:hover .text {
+    visibility: visible;
+}
+
+#gallery .gallery-image:hover img {
+    transform: scale(1.1);
 }
 
 #gallery .gallery-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--transition);
+}
+
+.w-1 {
+    grid-column: span 1;
+}
+
+.w-2 {
+    grid-column: span 2;
+}
+
+.w-3 {
+    grid-column: span 3;
+}
+
+.w-4 {
+    grid-column: span 4;
+}
+
+.h-1 {
+    grid-row: span 1;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.h-3 {
+    grid-row: span 3;
+}
+
+.h-4 {
+    grid-row: span 4;
 }
 
 /** Gallery **/
 
 /** Playlists **/
-#playlists {}
-
 #playlists .playlists-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
