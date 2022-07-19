@@ -51,6 +51,7 @@ h6 {
 
 h1 {
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -292,7 +293,6 @@ ul li {
 }
 
 #artists .artists-cards {
-    background: linear-gradient(0deg, rgba(52, 74, 81, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -340,3 +340,35 @@ ul li {
 }
 
 /** Artists **/
+
+/** Gallery **/
+/** Gallery **/
+
+/** Playlists **/
+#playlists {}
+
+#playlists .playlists-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+#playlists .playlists-cards img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#playlists .playlists-cards .playlist-card:first-child {
+    margin-top: 4rem;
+}
+
+#playlists .playlists-cards .playlist-card:nth-child(3) {
+    margin-top: 4rem;
+}
+
+#playlists .music-player img {
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+/** Playlists **/
