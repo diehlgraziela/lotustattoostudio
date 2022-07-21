@@ -54,6 +54,34 @@
     #gallery .gallery-images .gallery-image {
         width: calc(100% - 10px);
     }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .contact-info {
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact .contact-info h1 {
+        font-size: 3rem;
+    }
+
+    #contact h1,
+    #contact p {
+        text-align: center;
+    }
+
+    #contact .contact-info .container {
+        align-items: center;
+    }
+
+    #contact .contact-form {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 

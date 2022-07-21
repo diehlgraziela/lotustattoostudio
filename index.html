@@ -7,6 +7,7 @@
     <title>Lotus Tattoo Studio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
     <link rel="shortcut icon" href="images/logo2-blue.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -248,12 +249,70 @@
     <div class="stripe"></div>
 
     <section id="contact">
-        <div class="half-bg"><img src="images/about-img.png" alt="imagem"></div>
+        <div class="contact-info">
+            <div class="container">
+                <div>
+                    <h1>Informações de Contato</h1>
+                    <p>Encontre-nos através das informações abaixo, ou envie-nos um email pelo formulário ao
+                        lado.</p>
+                </div>
 
-        <div class="container">
-            <div class="contact-form">
+                <div class="location">
+                    <div>
+                        <i class="fa-solid fa-phone"></i> (00) 00000-0000
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i> mail@mail.com
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i> Rua Tal, Bairro Tal, 123
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <div><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+                    <div><a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <div class="container">
                 <h1>Marque sua Sessão</h1>
-                <form action=""></form>
+                <form action="">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder=""><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder=""><br>
+
+                    <label for="phone">Telefone</label>
+                    <input type="text" name="phone" placeholder=""><br>
+
+                    <div class="checkboxes">
+                        <div class="pretty p-default">
+                            <input type="checkbox" />
+                            <div class="state p-primary">
+                                <label>Tatuagem</label>
+                            </div>
+                        </div>
+
+                        <div class="pretty p-default">
+                            <input type="checkbox" />
+                            <div class="state p-primary">
+                                <label>Piercing</label>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="" rows="4" style="resize:none"
+                        placeholder="Diga-nos a sua ideia..."></textarea><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
         </div>
     </section>
