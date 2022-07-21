@@ -3,6 +3,9 @@
 2 - Header
 3 - Home
 4 - About
+5 - Artists
+6 - Gallery
+7 - Contact
 */
 
 /** Resets and global variables **/
@@ -30,6 +33,7 @@
 html {
     font-family: 'Source Serif Pro', serif;
     scroll-behavior: smooth;
+    color: var(--main-color);
 }
 
 body {
@@ -61,7 +65,6 @@ h3 {
 
 p {
     font-size: 18px;
-    color: var(--main-color);
 }
 
 a {
@@ -88,6 +91,10 @@ a.button:hover {
 
 ul li {
     list-style-type: none;
+}
+
+i {
+    color: var(--white);
 }
 
 .container {
@@ -249,10 +256,6 @@ ul li {
 }
 
 #home h1 {
-    color: var(--white);
-}
-
-.fa-chevron-down {
     color: var(--white);
 }
 
@@ -441,81 +444,6 @@ ul li {
 
 /** Gallery **/
 
-/** Playlists **/
-#playlists .playlists-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-}
-
-#playlists .playlists-cards img {
-    max-width: 100%;
-    object-fit: cover;
-}
-
-#playlists .playlists-cards .playlist-card:first-child {
-    margin-top: 4rem;
-}
-
-#playlists .playlists-cards .playlist-card:nth-child(3) {
-    margin-top: 4rem;
-}
-
-#playlists .player {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-}
-
-#playlists .player .details {
-    color: var(--title-color);
-}
-
-#playlists .player .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-#playlists .player .time-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    color: var(--main-color);
-}
-
-#playlists .player .volume-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-#playlists .player i {
-    color: var(--main-color);
-    cursor: pointer;
-}
-
-#playlists .player input {
-    width: 40%;
-    height: 1rem;
-    border-radius: 2px;
-    -webkit-appearance: none;
-    background: var(--main-color);
-}
-
-#playlists .player input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: var(--title-color);
-    cursor: pointer;
-}
-
-/** Playlists **/
 
 /** Contact **/
 #contact {
@@ -523,17 +451,88 @@ ul li {
     align-items: center;
 }
 
-#contact .half-bg {
+#contact .contact-info {
+    background: url(../images/form-img.png) no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    color: var(--white);
     width: 50%;
+    height: 100%;
+    display: flex;
 }
 
-#contact .half-bg img {
-    width: 100%;
-    height: 100vh;
+#contact .contact-info .container {
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+#contact .contact-info h1,
+#contact .contact-info p {
+    color: var(--white);
+}
+
+#contact .contact-info .location {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#contact .contact-info .location i {
+    margin-right: 4px;
+}
+
+#contact .contact-info .social-media {
+    display: flex;
+    gap: 2rem;
+}
+
+#contact .contact-info .social-media i {
+    background: var(--white);
+    color: var(--main-color);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact .contact-form {
     width: 50%;
+    height: 100vh;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--main-color);
+    width: 100%;
+}
+
+#contact form input,
+#contact form textarea {
+    outline: none;
+    padding: 0.5rem;
+    font-family: 'Source Serif Pro', serif;
+    /* background: #c2c2c2; */
+    background: none;
+    border: 1px solid #a5a5a5;
+}
+
+#contact form input[type="submit"] {
+    background: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 1rem 0;
+}
+
+#contact form input[type="checkbox"]:checked {
+    background: var(--main-color);
 }
 
 /** Contact **/
