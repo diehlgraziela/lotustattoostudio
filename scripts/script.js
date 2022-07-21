@@ -46,3 +46,10 @@ for (link of navLinks) {
     })
 
 })();
+
+//Phone mask
+var element = document.getElementById('phone');
+var maskOptions = {
+    mask: '(00) 0 0000-0000'
+};
+var mask = IMask(element, maskOptions);
