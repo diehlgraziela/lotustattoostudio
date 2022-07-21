@@ -6,6 +6,7 @@
 5 - Artists
 6 - Gallery
 7 - Contact
+8 - Footer
 */
 
 /** Resets and global variables **/
@@ -536,3 +537,14 @@ i {
 }
 
 /** Contact **/
+
+
+/** Footer **/
+#footer {
+    background: var(--main-color);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/** Footer **/
