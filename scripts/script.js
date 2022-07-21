@@ -4,7 +4,6 @@ let navLinks = document.querySelectorAll("nav ul li a");
 let nav = document.querySelector("header nav");
 
 burgerMenu.addEventListener("click", () => {
-
     nav.classList.toggle("active");
     burgerMenu.classList.toggle("active");
 })
